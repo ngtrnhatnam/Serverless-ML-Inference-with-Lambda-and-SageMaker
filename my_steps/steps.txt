@@ -1,0 +1,12 @@
+[ Hiện đang sử dụng: 
+- gcc --version: gcc (GCC) 15.1.0
+- py --version: Python 3.13.1 ]
+- Ctrl + Shilf + P > Python: Select Interpreter
+
+- Tạo môi trường ảo: python -m venv .venv
+- Kích hoạt môi trường ảo: .venv\Scripts\activate       # Windows
+# hoặc: source .venv/bin/activate  # macOS / Linux
+- Cài đặt boto3 và sagemaker:pip install boto3 sagemaker
+- Cài đặt torch, torchvision và pillow: pip install torch torchvision pillow
+- Tạo IAM Role: Trusted entity type: AWS Service > Use case: SageMaker - Execution > Set permissions boundary: AmazonS3FullAssest
+- Add permissions > Attach Policies: AmazonEC2ContainerRegistryReadOnly
